@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Student Profile</title></head>
+  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  font-family: Arial;
+}
+</style>
+</head>
+
+
+<h2>Student Profile: John Doe</h2>
+
+<div class="card">
+  <img src="https://www.mansworldindia.com/wp-content/uploads/2022/06/Hasbulla.jpg" alt="Profile Picture" style="width:100%">
+  <div class="container">
+    <h4><b> Name: John Doe</b></h4> 
+    <p>Age:19</p>
+    <p> Email: JohnDoe@gmail.com</p>
+    <p>Phone Number: +44 114 496 0410 </p>
+    <p class = "skills">
+      Skills Summary: Mathematics
+      <br>
+      Problem-solving
+      <br>
+      AWS cloud computing
+      <br>
+      Full-stack developer
+      <br>
+      Computer and technology knowledge
+    </p> 
+    
+    <a href="{{ url_for('profile_card2') }}">
+      <button class = "next-button">
+        Next
+      </button>
+
+      <a href="{{ url_for('dashboard') }}">
+        <button class="back-button">
+          Back to Overview
+        </button>
+    <style>
+      .next-button {
+    background-color:rgba(0,0,0,0.2);
+    color: black;
+    border: none;
+    height: 36px;
+    width: 74px;
+    border-radius: 18px;
+    cursor: pointer;
+    margin-left: 250px;
+    font-weight: bold;
+    font-size: 15px;
+   }
+
+   .next-button:active {
+    background-color: white;
+
+   }
+
+   .back-button {
+    background-color:rgba(0,0,0,0.2);
+    color: black;
+    border: none;
+    height: 40px;
+    width: 85px;
+    border-radius: 18px;
+    cursor: pointer;
+    margin-right: 250px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+   }
+
+   .back-button:active {
+    background-color:white;
+   }
+    </style>
+
+  </div>
+</div>
+
+<a href="{{ url_for('profile_card') }}"></a>
+
+  </body>
+</html>

@@ -1,0 +1,8 @@
+I've used a combination of javascript and css in order to make a functional homepage. Use the buttons in order to navigate between pages. 
+The button locations are indicated by the cursor changing to a pointer, upon clicking said button you will switch between homepages and the selected profiles.
+In order to start the application you go to app.py and hit run in the top right corner, occasionally I've ran into this specific error within the first few times quitting and running the application again "SyntaxError: invalid syntax
+>>> "C:/Program Files/Python38/python.exe" c:/Users/CompSci/Documents/zoelets-project/FlaskLoginPage/Example2/app.py
+  File "<stdin>", line 1
+    "C:/Program Files/Python38/python.exe" c:/Users/CompSci/Documents/zoelets-project/FlaskLoginPage/Example2/app.py" If this occurs just close down the terminal and launch the app.py again. It shouldn't appear again.
+
+  I've also added a functional login/signup with a database collection of users that you can view in MYSQL when running locally.
